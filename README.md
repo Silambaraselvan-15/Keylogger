@@ -43,9 +43,10 @@ step 3: use ** pyinstaller ** to build the program into a executable file(depend
 
 To build the exe file
 
-1. use  in your machine
+1. use  
 ##
                 pip install pyinstaller
+in your machine
 
 2. run "  pyinstaller --onefile {filename} "  #keylog.py
 
