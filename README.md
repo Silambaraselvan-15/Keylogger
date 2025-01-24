@@ -1,3 +1,7 @@
+##
+pip instal pyinstaller
+
+
 # Keylogger
 simple keylogger application for educational purpose
 
