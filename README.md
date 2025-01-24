@@ -43,11 +43,11 @@ step 3: use ** pyinstaller ** to build the program into a executable file(depend
 
 To build the exe file
 
-1: use  in your machine
+1. use  in your machine
 ##
                 pip install pyinstaller
 
-2: run "  pyinstaller --onefile {filename} "  #keylog.py
+2. run "  pyinstaller --onefile {filename} "  #keylog.py
 
 3. open " dist " folder in the cloned file location
 
