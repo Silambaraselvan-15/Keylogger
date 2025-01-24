@@ -1,6 +1,3 @@
-##
-        pip install pyinstaller
-
 
 # Keylogger
 simple keylogger application for educational purpose
