@@ -7,7 +7,7 @@ simple keylogger application for educational purpose
 
 + keylogrec.py -  for attacker
 
-#### Dependencies needed
+### Dependencies needed
 
 -  pynput
 
