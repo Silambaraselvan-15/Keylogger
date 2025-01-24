@@ -9,13 +9,13 @@ simple keylogger application for educational purpose
 
 #### Dependencies needed
 
-- [ ] pynput
+-  pynput
 
-- [ ] socket
+-  socket
 
-- [ ] pyinstaller
+-  pyinstaller
 
-- [ ] python interpretor (latest version)
+-  python interpretor (latest version)
 
 ## Usage
 ### method 1
