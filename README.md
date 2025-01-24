@@ -3,9 +3,9 @@
 
 simple keylogger application for educational purpose
 
-keylog.py    -  for victim machine
++ keylog.py    -  for victim machine
 
-keylogrec.py -  for attacker
++ keylogrec.py -  for attacker
 
 #### Dependencies needed
 
