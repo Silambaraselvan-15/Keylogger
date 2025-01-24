@@ -21,6 +21,8 @@ simple keylogger application for educational purpose
 ### method 1
 
 step 1: clone the repo 
+##
+    https://github.com/Silambaraselvan-15/Keylogger.git
 
 step 2: replace the ipaddress by attacker's ip address in both files
 
