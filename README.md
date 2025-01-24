@@ -31,10 +31,12 @@ step 1: clone the repo
 step 2: replace the ipaddress by attacker's ip address in both files
 step 3: use ** pyinstaller ** to build the program into a executable file(dependencies included Automatically)
         To build the exe file
-        1: use " pip install pyinstaller " in your machine
-        2: run "  pyinstaller --onefile {filename} "  #keylog.py
-        3. open " dist " folder in the cloned file location
-        4. exe file build successfully
+        1: use  in your machine
+##
+                pip install pyinstaller
+2: run "  pyinstaller --onefile {filename} "  #keylog.py
+3. open " dist " folder in the cloned file location
+4. exe file build successfully
 step 4: send the exe file(keylog.exe) to the victim machine
 step 5: run the exe file in victim machine or place it in starup apps folder 
 step 6: run keylogrec.py in attacker machine
