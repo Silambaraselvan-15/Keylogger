@@ -43,9 +43,9 @@ step 1: clone the repo
 
 step 2: replace the ipaddress by attacker's ip address in both files
 
-step 3: use ** pyinstaller ** to build the program into a executable file(dependencies included Automatically)
+step 3: use `pyinstaller` to build the program into a executable file(dependencies included Automatically)
 
-To build the exe file
+>To build the exe file
 
 1. use the below command in your machine
 ##
