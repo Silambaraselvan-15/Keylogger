@@ -45,16 +45,18 @@ To build the exe file
 
 1. use the below command in your machine
 ##
-                pip install pyinstaller
+    pip install pyinstaller
 
 
 2. run `pyinstaller --onefile {filename}`  #keylog.py
 ##
     pyinstaller --onefile keylog.py
-    
-3. open `dist` folder in the cloned file location
 
-4. exe file build successfully
+3. exe file build successfully
+
+4. open `dist` folder in the cloned file location
+
+
 
 step 4: send the exe file(keylog.exe) to the victim machine
 
