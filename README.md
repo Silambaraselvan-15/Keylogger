@@ -70,6 +70,6 @@ step 7: monitor the terminal/output space in attacker machine
 step 8: Well Done👍 dude
 
 
-> [!Disclaimer]
+> **Disclaimer**
 
 This Program is intended for educational use only. Unauthorized use of this software to monitor devices without explicit permission is illegal and prohibited. Users are responsible for ensuring compliance with all applicable laws and regulations. The developer is not liable for any misuse or resulting damages. Use at your own risk.
