@@ -51,7 +51,6 @@ To build the exe file
 ##
     pip install pyinstaller
 
-
 2. run `pyinstaller --onefile {filename}`  #keylog.py
 ##
     pyinstaller --onefile keylog.py
@@ -59,8 +58,6 @@ To build the exe file
 3. exe file build successfully
 
 4. open `dist` folder in the cloned file location
-
-
 
 step 4: send the exe file(keylog.exe) to the victim machine
 
@@ -73,6 +70,6 @@ step 7: monitor the terminal/output space in attacker machine
 step 8: Well Done👍 dude
 
 
-### Disclaimer
+> [!Disclaimer]
 
 This Program is intended for educational use only. Unauthorized use of this software to monitor devices without explicit permission is illegal and prohibited. Users are responsible for ensuring compliance with all applicable laws and regulations. The developer is not liable for any misuse or resulting damages. Use at your own risk.
