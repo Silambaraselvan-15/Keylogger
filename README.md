@@ -42,9 +42,11 @@ step 2: replace the ipaddress by attacker's ip address in both files
 step 3: use ** pyinstaller ** to build the program into a executable file(dependencies included Automatically)
 
 To build the exe file
+
 1: use  in your machine
 ##
                 pip install pyinstaller
+
 2: run "  pyinstaller --onefile {filename} "  #keylog.py
 
 3. open " dist " folder in the cloned file location
